@@ -194,7 +194,7 @@ export default function Walkscreen() {
   }, [status]);
 
   useEffect(() => {
-  if (seconds < 60 || goalSent) return;
+  if (seconds < 300 || goalSent) return;
   setGoalSent(true);
   setNoteMsg("Walking goal reached!");
   if (!notificationsOn) return;
@@ -260,7 +260,7 @@ export default function Walkscreen() {
     <View style={styles.container}>
       <Text style={styles.paragraph}>{text}</Text>
       <Text style={styles.status}>Status: {status}</Text>
-      <Text style={styles.status}>Goal: 60 seconds</Text>
+      <Text style={styles.status}>Goal: 300 seconds</Text>
       <Text style={styles.status}>Progress: {seconds} seconds</Text>
       <Text style={styles.status}>{noteMsg}</Text>
       <View style={styles.buttonRow}>
@@ -281,8 +281,8 @@ export default function Walkscreen() {
         </View>
       </View>
       <WalkMap />
-      <Link href="/walk-notes" style={styles.link}>
-        Go to Walk-Notes
+      <Link href="/mood-notes" style={styles.link}>
+        Go to Mood-Notes
       </Link>
       <Button
         title="Press to schedule a notification"

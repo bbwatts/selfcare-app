@@ -30,8 +30,8 @@ export default function AppTabs() {
           <TabTrigger name="walk" href="/walk" asChild>
             <TabButton>Walk</TabButton>
           </TabTrigger>
-          <TabTrigger name="walk-notes" href="/walk-notes" asChild>
-            <TabButton>Walk Notes</TabButton>
+          <TabTrigger name="mood-notes" href="/mood-notes" asChild>
+            <TabButton>Mood Notes</TabButton>
           </TabTrigger>
         </CustomTabList>
       </TabList>
