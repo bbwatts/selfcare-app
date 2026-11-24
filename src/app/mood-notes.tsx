@@ -100,7 +100,8 @@ export default function MoodNotesScreen() {
     const updatedNotes = [...notes, newNote];
     setNotes(updatedNotes);
     await AsyncStorage.setItem('moodNotes', JSON.stringify(updatedNotes));
-    setNote(newNote);
+    setNote({ text: '', createdAt: '', id: '', syncStatus: '', mood: 0 });
+    setMood(0);
     setStatus('Note saved on this device.');
   };
 
