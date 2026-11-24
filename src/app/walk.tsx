@@ -280,7 +280,10 @@ export default function Walkscreen() {
           <Button title="Stop Walk" onPress={stopWalk} />
         </View>
       </View>
-      <WalkMap />
+      <WalkMap 
+        latitude={location?.coords.latitude}
+        longitude={location?.coords.longitude}
+      />
       <Link href="/mood-notes" style={styles.link}>
         Go to Mood-Notes
       </Link>

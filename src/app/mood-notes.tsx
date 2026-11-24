@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 32,
     fontWeight: "bold",
+    color: "#898989",
   },
   inputText: {
     borderWidth: 1,
