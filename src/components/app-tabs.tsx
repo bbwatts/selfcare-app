@@ -39,6 +39,11 @@ export default function AppTabs() {
         <NativeTabs.Trigger.Icon sf="star" md="rate_review" />
       </NativeTabs.Trigger>
 
+      <NativeTabs.Trigger name="exercises">
+        <NativeTabs.Trigger.Label>Exercises</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf="figure.walk" md="fitness_center" />
+      </NativeTabs.Trigger>
+
       <NativeTabs.Trigger name="demo">
         <NativeTabs.Trigger.Label>Demo</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf="sparkles" md="science" />
