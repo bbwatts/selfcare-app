@@ -1,1 +1,10 @@
-have a mental health app that checks in and then asks how your doing
+#requirements
+
+website, mobile application, sqlite database, dont store data in json or js files, crud,
+have notes have modification and delete
+
+need to be able to deploy by tuesday
+
+need to use npx eas build to build app but it needs to be initialized
+select all when prompted, might need to run eas initialize command.
+might need a keystore file
